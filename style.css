@@ -1,0 +1,286 @@
+.textphp {
+    text-align: left;
+    margin-top: 50px;
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+}
+
+#loginphoto {
+    margin-top: -10px;
+    margin-bottom: -10px;
+    text-align: right;
+    width: 30px;
+    height: 30px;
+}
+
+#loginphoto:hover {
+    cursor: pointer;
+}
+
+#loginform {
+    text-align: center;
+    margin: 100px;
+}
+
+#signinblock {
+    display: none;
+    margin-top: 10px;
+}
+
+.modal {
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    background-color: red; 
+    color: white; 
+    padding: 10px; 
+    cursor: pointer;
+}
+
+/* tutaj wszystko z poprzedniej czesci */
+html {
+    scroll-padding-top: 30px;
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
+    margin: 0;
+    background-color: gray;
+    scroll-snap-align: start;
+}
+
+h1 {
+    font-size: 5vw;
+    color: rgb(65, 3, 3);
+    padding: 10px;
+    font-family: 'Anton', sans-serif;
+    position: relative;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3vw;
+    color: rgb(65, 3, 3);
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}
+
+nav {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    background-color: gray; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 20px;
+    padding-top: 5px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:active {
+    background-color: yellow;
+}
+
+.dropbtn {
+    margin-left: -25px;
+    background-color: hsla(0, 0%, 100%, 0);
+    color: black;
+    font-weight: bold;
+    border: none;
+}  
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    margin-left: -30px;
+    display: none;
+    position: absolute;
+    background-color: gray;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 20px;
+}
+
+.dropdown-content a {
+    font-family: 'Anton', sans-serif;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color:darkgray;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: darkgray;}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    outline-color:rgba(255, 0, 0, 0.26);
+    outline-style: outset;
+}
+
+.container .image, .container .text {
+    flex: 1 1 50%;
+    box-sizing: border-box;
+}
+
+.container .image img {
+    width: 403px;
+    height: 403px;
+    object-fit: cover; 
+}
+
+.container .text {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 100px;
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+}
+
+.container .text::first-letter{
+    color: #830000;
+    font-size: 200%;
+}
+
+.container-photo{
+    margin: 50px;
+    margin-left: 115px;
+}
+
+.container-photo img{
+    width: 200px;
+    height: 200px;
+}
+
+.container-photo img:hover {
+    transform: scale(2);
+}
+
+svg {
+    margin-bottom: 1%;
+    position: relative;
+    animation: mymove 10s infinite;
+}
+
+@keyframes mymove {
+    0% {left: 0px;}
+    50% {left: 500px;}
+    100% {left: 0px;}
+}
+
+footer {
+    color: lightgray;
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+footer a {
+        margin: 20px;
+        padding-top: 5px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+}
+
+.imageaboutme img{
+    display: flex; 
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    transition: width 1s, height 1s;
+}
+
+.imageaboutme img:hover {
+    width: 400px;
+    height: 400px;
+}
+
+input, select {
+    background-color: rgb(112, 112, 112); 
+    border: 1px solid black; 
+    padding: 5px; 
+}
+
+form, select{
+    font-family: 'Anton', sans-serif;
+    align-items: left;
+    justify-content: left; 
+    flex-direction: column;
+}
+
+label , button{
+    padding: 5px;
+    font-family: 'Anton', sans-serif;
+}
+
+.linkidomuzy ,.artistbutton{
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: rgb(87, 6, 6); 
+    color: rgb(255, 255, 255); 
+    text-decoration: none; 
+    border-radius: 5px; 
+    border: none; 
+    font-size: 16px; 
+    text-align: center; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.linkidomuzy:hover {
+    background-color: rgb(120, 6, 6); 
+}
+
+#extra-info {
+    padding: 5px;
+}
+
+.rating {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin-top: 100px;
+    }
+    h1 {
+        margin-top: 10px;
+    }
+    nav {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .container {
+        flex-direction: column; 
+    }
+    .container .image, .container .text {
+        flex: 1 1 100%;
+        padding: 20px; 
+        font-size: 20px;
+    }
+    svg {
+        display: none;
+    }
+}
